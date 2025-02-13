@@ -21,7 +21,7 @@ function konversi(suhu, tipeSuhu) {
   } else if (tipeSuhu === f) {
     celcius = ((suhu - 32) * 5) / 9;
     reamur = ((suhu - 32) * 4) / 9;
-    kelvin = ((suhu - 459.67) * 5) / 9;
+    kelvin = ((suhu + 459.67) * 5) / 9;
     console.log(
       `Hasil konversi dari ${suhu}°F adalah\nCelcius = ${celcius}°C\nReamur = ${reamur}°R\nKelvin = ${kelvin}°K`
     );
